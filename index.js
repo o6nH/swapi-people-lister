@@ -45,7 +45,6 @@ function changeLiStyle(evt) {
 function showInfo(evt) {
   const target = evt.target;
   if(target.tagName === 'SPAN'){
-    console.log(personalInfoBody.children);
     
     Array.from(personalInfoBody.children).forEach(tBodyChild => tBodyChild.remove(tBodyChild))
     const index = target.dataset.id;
